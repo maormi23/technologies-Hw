@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Maor Mizrahi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container" dir="ltr"> 
+<header class="header">
+            <div class="header-text">
+                <h1>Maor Mizrahi</h1>
+                <h2>B.Sc. Information Systems Student specializing in AI</h2>
+            </div>
+            
+            <div class="header-right">
+                <img src="profile.jpg" alt="Maor Mizrahi" class="profile-pic">
+                <div class="contact-info">
+                    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/maormi" target="_blank">linkedin.com/in/maormi</a></p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="projects">
+                <h3>Projects</h3>
+                <div class="item">
+                    <h4>Taxi Management System, Java/OOP</h4>
+                    <p>Developed a GUI application in Java using OOP principles. The system provided role-based access control with distinct interfaces for different user roles.</p>
+                </div>
+                <div class="item">
+                    <h4>Court Management System, Java/OOP</h4>
+                    <p>Designed a modular application for comprehensive court administration, implementing complex business logic for case lifecycle tracking, resource management and developing dedicated user interfaces.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Maor Mizrahi. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
