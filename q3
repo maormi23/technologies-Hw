@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Maor Mizrahi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container" dir="ltr"> 
+<header class="header">
+            <div class="header-text">
+                <h1>Maor Mizrahi</h1>
+                <h2>B.Sc. Information Systems Student specializing in AI</h2>
+            </div>
+            
+            <div class="header-right">
+                <img src="profile.jpg" alt="Maor Mizrahi" class="profile-pic">
+                <div class="contact-info">
+                    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/maormi" target="_blank">linkedin.com/in/maormi</a></p>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="contact-page-info">
+                <h3>Contact Me</h3>
+                <p>You can reach me via the following platforms:</p>
+                
+                <p>
+                    <i class="fab fa-linkedin"></i>
+                    <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/maormi" target="_blank">linkedin.com/in/maormi</a>
+                </p>
+
+                <p>
+                <i class="fa-solid fa-envelope"></i>
+                <strong>Email:</strong> <a href="mailto:maormizrahy@gmail.com">maormizrahy@gmail.com</a>
+            </p>
+                
+                </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Maor Mizrahi. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
