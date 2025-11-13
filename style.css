@@ -1,112 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap');
-
-/* --- עיצוב כללי --- */
+/* ===== עיצוב כללי ===== */
 body {
-  /* הגדרת הפונטים: קודם 'Frank Ruhl Libre', 
-     ואם לא זמין, 'David', ואם לא, כל פונט סריפי */
-  font-family: 'Frank Ruhl Libre', 'David', Times, serif;
-  font-size: 18px; /* גודל קריא */
-  line-height: 1.7; /* רווח נעים בין השורות */
-  background-color: #f0f2f5; /* רקע אפרפר-כחלחל בהיר */
-  color: #333; /* צבע טקסט כהה וברור */
-  direction: rtl; /* כיוון מימין לשמאל חובה לעברית */
-  margin: 0;
-  padding: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    min-height: 100vh;
 }
 
-/* "עוטף" שמרכז את התוכן במסך ונותן לו רוחב מוגבל */
-.content-wrapper {
-  max-width: 960px; /* רוחב מקסימלי לתוכן */
-  margin: 20px auto; /* ממרכז את התוכן בדף */
-  padding: 20px;
+/* ===== כותרת עליונה ===== */
+header {
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-/* --- עיצוב הניווט (הקישורים בין העמודים) --- */
-nav {
-  text-align: center;
-  background-color: #0056b3; /* צבע כחול ראשי */
-  padding: 15px 0;
-  margin-bottom: 25px;
-  border-radius: 8px; /* פינות מעוגלות */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* הצללה עדינה */
+header h1 {
+    margin: 10px 0;
+    font-size: 1.8em;
+    letter-spacing: 1px;
 }
 
+/* ===== תפריט ניווט ===== */
 nav a {
-  color: white; /* צבע טקסט לבן */
-  text-decoration: none; /* הסרת קו תחתון */
-  padding: 10px 20px;
-  font-weight: 500;
-  font-size: 20px;
-  transition: background-color 0.3s ease; /* אפקט מעבר חלק */
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+    font-weight: bold;
 }
 
-/* אפקט במעבר עכבר על הקישורים בניווט */
 nav a:hover {
-  background-color: #004085; /* כחול טיפה כהה יותר */
-  border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
 }
 
-/* --- עיצוב התוכן (דרישות התרגיל) --- */
-
-/* 1. דרישת ה-ID: עיצוב הכותרת הראשית של כל עמוד */
-#main-title {
-  color: #004a99; /* כחול כהה */
-  border-bottom: 3px solid #0056b3; /* קו תחתון מודגש */
-  padding-bottom: 10px;
-  font-weight: 700; /* פונט עבה (Bold) */
-  font-size: 2.5em; /* גודל מרשים (פי 2.5 מהגודל הרגיל) */
-  text-align: center; /* ממרכז את הכותרת */
+/* ===== תוכן הדף ===== */
+section {
+    background-color: white;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease;
 }
 
-/* 2. דרישת ה-Class (ראשונה): עיצוב כל "קופסת סעיף" */
-.question-section {
-  background-color: #ffffff; /* רקע לבן נקי */
-  border: 1px solid #ddd; /* מסגרת אפורה בהירה */
-  border-radius: 8px; /* פינות מעוגלות */
-  padding: 25px;
-  margin-bottom: 25px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* הצללה למראה "צף" */
-  transition: box-shadow 0.3s ease; /* אפקט מעבר בהצללה */
+/* ===== כותרות ===== */
+h2 {
+    color: #0077b6;
+    border-right: 5px solid #00b4d8;
+    padding-right: 10px;
+    margin-top: 25px;
 }
 
-/* אפקט במעבר עכבר על קופסת הסעיף */
-.question-section:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.15); /* הצללה מודגשת יותר */
+/* ===== תמונות ו-iFrame ===== */
+img, iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
 
-/* עיצוב כותרות המשנה (סעיפים א', ב', ג'...) */
-.question-section h2 {
-  font-weight: 700;
-  color: #0056b3; /* כחול */
-  border-bottom: 1px solid #eee; /* קו הפרדה עדין */
-  padding-bottom: 10px;
-  margin-top: 0; /* הסרת רווח מיותר */
+img:hover, iframe:hover {
+    transform: scale(1.02);
 }
 
-/* 3. דרישת ה-Class (שנייה): טקסט חשוב מודגש */
-.important-text {
-  font-weight: bold;
-  color: #c9302c; /* צבע אדום עמוק */
-  background-color: #fdf2f2; /* רקע ורדרד עדין להדגשה */
-  padding: 2px 5px;
-  border-radius: 4px;
-}
-
-/* --- עיצובים נוספים לניקיון --- */
-
-/* עיצוב כללי לרשימות (ממוספרות ולא ממוספרות) */
+/* ===== רשימות ===== */
 ul, ol {
-  padding-right: 20px; /* הזחה תקנית מימין */
+    margin-right: 30px;
+    line-height: 1.7;
 }
 
-li {
-  margin-bottom: 10px; /* רווח בין פריטי הרשימה */
+/* ===== קישורים כלליים ===== */
+a {
+    color: #0077b6;
 }
 
-/* עיצוב תמונות */
-img {
-  max-width: 100%; /* תמונה לעולם לא תחרוג מהאלמנט שעוטף אותה */
-  height: auto; /* שומר על יחס גובה-רוחב */
-  border-radius: 8px; /* פינות מעוגלות (כמו הקופסאות) */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* הצללה עדינה */
+a:hover {
+    color: #023e8a;
+}
+
+/* ===== אנימציות ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== התאמה לנייד ===== */
+@media (max-width: 600px) {
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    nav a {
+        margin: 0 5px;
+        padding: 4px 8px;
+    }
+
+    iframe, img {
+        width: 100%;
+        height: auto;
+    }
 }
