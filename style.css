@@ -42,6 +42,15 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
 }
+/*
+  זה עיצוב לקישור "פעיל", כלומר,
+  העמוד שבו המשתמש נמצא כרגע
+*/
+.active {
+  color: black; /* משנה את הצבע לשחור */
+  font-weight: bold; /* הופך אותו למודגש */
+  text-decoration: none; /* מסיר את הקו התחתון */
+}
 
 /* ===== תוכן הדף ===== */
 section {
