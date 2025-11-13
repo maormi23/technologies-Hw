@@ -116,6 +116,16 @@ a {
 a:hover {
     color: #023e8a;
 }
+/* ===== מידע על המגישים ===== */
+.submitters {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    font-size: 0.9em;
+    color: #f1f1f1;
+    font-weight: 500;
+    opacity: 0.9;
+}
 
 /* ===== אנימציות ===== */
 @keyframes fadeIn {
