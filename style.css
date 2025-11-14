@@ -1,4 +1,3 @@
-/* ===== עיצוב כללי ===== */
 body {
     font-family: "Segoe UI", Tahoma, sans-serif;
     background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
@@ -9,7 +8,6 @@ body {
     min-height: 100vh;
 }
 
-/* ===== כותרת עליונה ===== */
 header {
     background: linear-gradient(90deg, #0077b6, #00b4d8);
     color: white;
@@ -27,7 +25,6 @@ header h1 {
     letter-spacing: 1px;
 }
 
-/* ===== תפריט ניווט ===== */
 nav a {
     color: white;
     text-decoration: none;
@@ -42,17 +39,13 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
 }
-/*
-  זה עיצוב לקישור "פעיל", כלומר,
-  העמוד שבו המשתמש נמצא כרגע
-*/
+
 .active {
-  color: black; /* משנה את הצבע לשחור */
-  font-weight: bold; /* הופך אותו למודגש */
-  text-decoration: none; /* מסיר את הקו התחתון */
+  color: black; 
+  font-weight: bold; 
+  text-decoration: none; 
 }
 
-/* ===== תוכן הדף ===== */
 section {
     background-color: white;
     max-width: 900px;
@@ -63,7 +56,6 @@ section {
     animation: fadeIn 0.8s ease;
 }
 
-/* ===== כותרות ===== */
 h2 {
     color: #0077b6;
     border-right: 5px solid #00b4d8;
@@ -71,7 +63,6 @@ h2 {
     margin-top: 25px;
 }
 
-/* ===== תמונות ו-iFrame ===== */
 img, iframe {
     display: block;
     margin: 20px auto;
@@ -84,12 +75,10 @@ img:hover, iframe:hover {
     transform: scale(1.02);
 }
 
-/* ===== רשימות ===== */
 ul, ol {
     margin-right: 30px;
     line-height: 1.7;
 }
-/* ===== קופסה מעוצבת לכל סעיף בשאלה ===== */
 .question-box {
     background: #ffffffcc;
     border: 2px solid #00b4d8;
@@ -117,7 +106,6 @@ ul, ol {
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
-/* ===== קישורים כלליים ===== */
 a {
     color: #0077b6;
 }
@@ -125,7 +113,6 @@ a {
 a:hover {
     color: #023e8a;
 }
-/* ===== מידע על המגישים ===== */
 .submitters {
     position: absolute;
     left: 20px;
@@ -136,13 +123,11 @@ a:hover {
     opacity: 0.9;
 }
 
-/* ===== אנימציות ===== */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== התאמה לנייד ===== */
 @media (max-width: 600px) {
     section {
         margin: 20px;
