@@ -1,28 +1,35 @@
 body {
     font-family: "Segoe UI", Tahoma, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     color: #333;
     margin: 0;
     padding: 0;
     direction: rtl;
+    min-height: 100vh;
 }
 
 header {
     background-color: #0077b6;
     color: white;
-    padding: 15px 10px;
+    padding: 20px 10px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 1.5em;
+    margin: 10px 0;
+    font-size: 1.8em;
+    letter-spacing: 1px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
+    padding: 6px 12px;
+    border-radius: 5px;
     font-weight: bold;
 }
 
@@ -31,46 +38,61 @@ nav a:hover {
 }
 
 .active {
-    color: black;
-    font-weight: bold;
+    color: black; 
+    font-weight: bold; 
+    text-decoration: none; 
 }
 
 section {
     background-color: white;
     max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 1;
 }
 
 h2 {
     color: #0077b6;
-    border-right: 3px solid #00b4d8;
-    padding-right: 8px;
-    margin-top: 20px;
+    border-right: 4px solid #00b4d8;
+    padding-right: 10px;
+    margin-top: 25px;
 }
 
 img, iframe {
     display: block;
-    margin: 15px auto;
-    border-radius: 5px;
+    margin: 20px auto;
+    border-radius: 8px;
     max-width: 100%;
     height: auto;
 }
 
 ul, ol {
-    margin-right: 20px;
-    line-height: 1.6;
+    margin-right: 30px;
+    line-height: 1.7;
 }
 
 .question-box {
-    background: #fff;
+    background-color: white;
     border: 1px solid #00b4d8;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 25px auto;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 35px auto;
     max-width: 850px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;
+}
+
+.question-box h2 {
+    margin-top: 0;
+    color: #0077b6;
+    border-right: 5px solid #0077b6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #e0f0ff;
 }
 
 a {
@@ -83,15 +105,21 @@ a:hover {
 
 @media (max-width: 600px) {
     section {
-        margin: 15px;
-        padding: 15px;
+        margin: 20px;
+        padding: 20px;
     }
 
     header h1 {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     nav a {
         margin: 0 5px;
+        padding: 4px 8px;
+    }
+
+    iframe, img {
+        width: 100%;
+        height: auto;
     }
 }
