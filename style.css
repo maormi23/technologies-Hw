@@ -1,109 +1,76 @@
 body {
     font-family: "Segoe UI", Tahoma, sans-serif;
-    background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+    background-color: #f2f2f2;
     color: #333;
     margin: 0;
     padding: 0;
     direction: rtl;
-    min-height: 100vh;
 }
 
 header {
-    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    background-color: #0077b6;
     color: white;
-    padding: 20px 10px;
+    padding: 15px 10px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    position: sticky;
-    top: 0;
-    z-index: 10;
 }
 
 header h1 {
-    margin: 10px 0;
-    font-size: 1.8em;
-    letter-spacing: 1px;
+    margin: 0;
+    font-size: 1.5em;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    padding: 6px 12px;
-    border-radius: 8px;
-    transition: background 0.3s, transform 0.3s;
+    margin: 0 10px;
     font-weight: bold;
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.1);
+    text-decoration: underline;
 }
 
 .active {
-  color: black; 
-  font-weight: bold; 
-  text-decoration: none; 
+    color: black;
+    font-weight: bold;
 }
 
 section {
     background-color: white;
     max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 0.8s ease;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h2 {
     color: #0077b6;
-    border-right: 5px solid #00b4d8;
-    padding-right: 10px;
-    margin-top: 25px;
+    border-right: 3px solid #00b4d8;
+    padding-right: 8px;
+    margin-top: 20px;
 }
 
 img, iframe {
     display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-img:hover, iframe:hover {
-    transform: scale(1.02);
+    margin: 15px auto;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
 }
 
 ul, ol {
-    margin-right: 30px;
-    line-height: 1.7;
+    margin-right: 20px;
+    line-height: 1.6;
 }
+
 .question-box {
-    background: #ffffffcc;
-    border: 2px solid #00b4d8;
-    border-radius: 16px;
-    padding: 25px;
-    margin: 35px auto;
+    background: #fff;
+    border: 1px solid #00b4d8;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 25px auto;
     max-width: 850px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    animation: fadeIn 0.8s ease;
-}
-
-.question-box:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(0, 183, 255, 0.3);
-}
-
-.question-box h2 {
-    margin-top: 0;
-    color: #023e8a;
-    background: linear-gradient(90deg, #caf0f8, #90e0ef);
-    border-right: 6px solid #0077b6;
-    border-radius: 10px;
-    padding: 10px 15px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 a {
@@ -111,31 +78,20 @@ a {
 }
 
 a:hover {
-    color: #023e8a;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    color: #005f87;
 }
 
 @media (max-width: 600px) {
     section {
-        margin: 20px;
-        padding: 20px;
+        margin: 15px;
+        padding: 15px;
     }
 
     header h1 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     nav a {
         margin: 0 5px;
-        padding: 4px 8px;
-    }
-
-    iframe, img {
-        width: 100%;
-        height: auto;
     }
 }
