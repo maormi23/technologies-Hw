@@ -8,6 +8,11 @@ body {
     min-height: 100vh;
 }
 
+#main-title {
+    color: blue;
+    text-align: center;
+}
+
 header {
     background-color: #0077b6;
     color: white;
