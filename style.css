@@ -62,11 +62,16 @@ h2 {
 }
 
 img, iframe {
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    max-width: 100%;
-    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 85%; 
+    max-width: 640px;
 }
 
 ul, ol {
