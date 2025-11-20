@@ -11,7 +11,7 @@ body {
 header {
     background-color: steelblue;
     color: white;
-    padding: 20px 10px;
+    padding: 10px 10px;
     text-align: center;
     position: sticky;
     top: 0;
@@ -42,7 +42,24 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: blue;
+}
+
+.list {
+    line-height: 1.8;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.highlight {
+    color: blue;
 }
 
 @media (max-width: 600px) {
