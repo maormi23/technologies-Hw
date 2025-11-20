@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
 }
 
-header {
+#main-header {
     background-color: steelblue;
     color: white;
     padding: 10px 10px;
@@ -42,7 +42,7 @@ a {
 }
 
 a:hover {
-    color: blue;
+    color: lightblue;
 }
 
 .list {
