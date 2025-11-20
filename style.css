@@ -1,80 +1,115 @@
 body {
-    font-family: "Segoe UI", Tahoma, sans-serif;
-    background-color: white;
-    color: black;
-    margin: 0;
-    padding: 0;
-    direction: rtl;
-    min-height: 100vh;
+       background-color: powderblue;
 }
 
-#main-header {
-    background-color: steelblue;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.question-box {
-    background-color: white;
-    border: 1px solid steelblue;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 35px auto;
-    max-width: 850px;
-    box-shadow: 0 10px 25px lightgray;
-}
-
-.question-box h2 {
-    margin-top: 0;
-    color: white;
-    border-right: 5px solid steelblue;
-    padding: 10px 15px;
-    border-radius: 8px;
-    background-color: steelblue;
-}
-
-a {
-    color: white;
-}
-
-a:hover {
-    color: lightblue;
-}
-
-.list {
-    line-height: 1.8;
-}
-
-.nav-link {
-    text-decoration: none;
-}
-
-.active {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.highlight {
+h1 {
     color: blue;
 }
 
-@media (max-width: 600px) {
+p {
+    color: red;
+    font-size: 16px;
+    font-family: verdana;
+    border: 1px solid black;
 
-    section, nav a {
-        margin: 20px;
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 1.3em;
-    }
-
-    iframe, img {
-        width: 100%;
-        height: auto;
-    }
 }
+
+
+p { 
+     border: 1px solid black; 
+}
+
+/* p {
+      border: 1px solid black;
+      padding-top: 20px;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-bottom: 0x;
+} */
+
+/* 
+p {
+      border: 1px solid black;
+      margin-top: 0px;
+      margin-right: 150px;
+      margin-left: 80px;
+      margin-bottom: 0px;
+} */
+ #p1{
+
+    color: royalblue;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+ }
+  
+/* div{
+
+    box-shadow: 10px 10px 5px grey;
+} */
+
+
+p.error{
+    color: red;
+    font-weight: bold;
+}
+
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+
+
+/* Basic table border */
+/* table, th, td {
+  border: 1px solid black;
+} */
+
+
+/* Add spacing between cells */
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+
+/* Add spacing between cells */
+/* table {
+  border-spacing: 1px;
+} */
+
+
+
+/* Align text inside cells */
+/* th, td {
+  text-align: right;
+} */
+
+
+/* ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+} */
+
+/* li {
+      display: inline;
+      margin-right: 10px;
+} */
+
+
