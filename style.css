@@ -1,20 +1,15 @@
 body {
     font-family: "Segoe UI", Tahoma, sans-serif;
-    background-color: #ffffff;
-    color: #333;
+    background-color: white;
+    color: black;
     margin: 0;
     padding: 0;
     direction: rtl;
     min-height: 100vh;
 }
 
-#main-title {
-    color: blue;
-    text-align: center;
-}
-
 header {
-    background-color: #0077b6;
+    background-color: steelblue;
     color: white;
     padding: 20px 10px;
     text-align: center;
@@ -23,109 +18,42 @@ header {
     z-index: 10;
 }
 
-header h1 {
-    margin: 10px 0;
-    font-size: 1.8em;
-    letter-spacing: 1px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 6px 12px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-.active {
-    color: black; 
-    font-weight: bold; 
-    text-decoration: none; 
-}
-
-section {
-    background-color: white;
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    position: relative;
-    z-index: 1;
-}
-
-h2 {
-    color: #0077b6;
-    border-right: 4px solid #00b4d8;
-    padding-right: 10px;
-    margin-top: 25px;
-}
-
-img, iframe {
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    max-width: 100%;
-    height: auto;
-}
-
-iframe {
-    width: 85%; 
-    max-width: 640px;
-}
-
-ul, ol {
-    margin-right: 30px;
-    line-height: 1.7;
-}
-
 .question-box {
     background-color: white;
-    border: 1px solid #00b4d8;
+    border: 1px solid steelblue;
     border-radius: 12px;
     padding: 25px;
     margin: 35px auto;
     max-width: 850px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    position: relative;
-    z-index: 2;
+    box-shadow: 0 10px 25px lightgray;
 }
 
 .question-box h2 {
     margin-top: 0;
-    color: #0077b6;
-    border-right: 5px solid #0077b6;
+    color: white;
+    border-right: 5px solid steelblue;
     padding: 10px 15px;
     border-radius: 8px;
-    background-color: #e0f0ff;
+    background-color: steelblue;
 }
 
 a {
-    color: #0077b6;
+    color: white;
 }
 
 a:hover {
-    color: #005f87;
+    color: white;
 }
 
 @media (max-width: 600px) {
-    section {
+
+    section, nav a {
         margin: 20px;
-        padding: 20px;
+        padding: 10px;
     }
 
     header h1 {
         font-size: 1.3em;
-    }
-
-    nav a {
-        margin: 0 5px;
-        padding: 4px 8px;
     }
 
     iframe, img {
