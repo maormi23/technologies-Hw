@@ -18,6 +18,10 @@ body {
     z-index: 10;
 }
 
+#main-header a {
+    color: white;
+}
+
 .question-box {
     background-color: white;
     border: 1px solid steelblue;
@@ -39,7 +43,7 @@ body {
 }
 
 a {
-    color: white;
+    color: steelblue;
 }
 
 a:hover {
